@@ -8,5 +8,5 @@ __pycache__
 *.egg-link
 *.pyc
 *.pyo
-/utils/__pycache__
-/tests/__pycache__
+utils/__pycache__
+tests/__pycache__
