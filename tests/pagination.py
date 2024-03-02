@@ -12,4 +12,4 @@ async def test_pagination(ctx):
     
 
     
-bot.run("MTE3MDgwMzUwMTQxMzE4MzU1OQ.GKNmhr.A9vKnQIQ_y4KopS04ETckFgjywEEKSwetbGaak")
+bot.run("TOKEN")
