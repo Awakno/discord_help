@@ -24,6 +24,7 @@ def parse_timespan(timespan: str) -> int:
     
     
     """
+    
     date = {
         "s": 1,
         "m": 60,
@@ -33,11 +34,16 @@ def parse_timespan(timespan: str) -> int:
         "mo": 2592000
     }
     total_seconds = 0
+    # check if format is correct
     matches = re.finditer(r'(\d+)([a-zA-Z]+)', timespan)
+    # calculate total seconds
     for match in matches:
+        # get value and unit
         value, unit = match.groups()
         unit = unit.lower()
+        # convert to seconds
         total_seconds += date.get(unit, 1) * int(value)
+    # return total seconds
     return total_seconds
 
 
