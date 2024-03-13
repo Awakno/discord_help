@@ -33,4 +33,4 @@ async def on_member_join(member):
 
     
 
-bot.run("MTE3MDgwMzUwMTQxMzE4MzU1OQ.GpMvYm.XahvXvtdjdzWB6oc1yDFZKRiItMUAqrFT_9Np4")
+bot.run("")
