@@ -6,6 +6,7 @@ bot = discord.Bot(intents=discord.Intents.all())
 
 @bot.slash_command()
 async def test(ctx):
+    error_message = discord.Embed(description="`❌` **Tu n'as pas la permission d'utiliser ce menu**")
     pagination = discord_help.Pagination(
         author=ctx.author,
         pages=[
@@ -13,7 +14,8 @@ async def test(ctx):
             discord.Embed(title="Page 2"),
             discord.Embed(title="Page 3")
         ],
-        embeded=True
+        embeded=True,
+        error_message=error_message
     )
     
     timespan = discord_help.parse_timespan("1h")
@@ -31,4 +33,4 @@ async def on_member_join(member):
 
     
 
-bot.run("MTE3MDgwMzUwMTQxMzE4MzU1OQ.GN6YBs.bFyWKenz7uFCk6yFZAQ6WoL7A-fCpqeTsExSpY")
+bot.run("MTE3MDgwMzUwMTQxMzE4MzU1OQ.GpMvYm.XahvXvtdjdzWB6oc1yDFZKRiItMUAqrFT_9Np4")
