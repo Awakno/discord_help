@@ -10,3 +10,4 @@ __pycache__
 *.pyo
 utils/__pycache__
 tests/__pycache__
+dist

@@ -20,15 +20,15 @@ class Pagination(discord.ui.View):
         view=Pagination(author, pages=embeds, embeded=True)
         """
         super().__init__()
-        self.author = author
+        self.author = author if author else None
         self.pages = pages
-        self.embeded = embeded
+        self.embeded = embeded if embeded else False
         self.error_message = error_message
 
         self.current_page = 0
     # Check if the user is the author
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
-        if interaction.user == self.author:
+        if interaction.user == self.author or self.author is None:
             return True
         else:
             if isinstance(self.error_message, discord.Embed):
