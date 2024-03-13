@@ -70,7 +70,7 @@ async def parse_time(ctx, time):
 
 # Credits
 
-Author: Awakno
-Contact: awaknocode@gmail.com
-Discord: https://discord.gg/TzreuU5a7A
+##### Author: Awakno
+##### Contact: awaknocode@gmail.com
+##### Discord: https://discord.gg/TzreuU5a7A
 
