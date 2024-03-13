@@ -33,4 +33,8 @@ async def on_member_join(member):
 
     
 
+<<<<<<< HEAD
 bot.run("")
+=======
+bot.run("TOKEN")
+>>>>>>> 605088d836d83bd6fcd9df71257a04e8ad273c18
