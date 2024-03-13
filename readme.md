@@ -30,7 +30,7 @@ import discord_help
 @bot.command()
 async def pagination():
     pages = [discord.Embed(title="Page 1"), discord.Embed(title="Page 2")]
-    view = discord_help.Pagination(author=ctx.author, pages=pages, embeded=True)
+    view = discord_help.Pagination(author=ctx.author,error_message=discord.Embed(description="`❌`**Tu n'as pas la permission d'utiliser ce menu**"), pages=pages,embeded=True)
     message = await ctx.send(content="Placeholder message for pagination", view=view)
 
 bot.run("TOKEN")
