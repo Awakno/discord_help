@@ -1,15 +1,15 @@
-# Your Library Name
-
+# Discord_help
 ## Overview
-Provide a brief overview of your library and its purpose.
+
+Discord_help is a powerful and easy-to-use library for Discord bots.
 
 ## Installation
-Include instructions on how to install your library. For example:
+Use pip
 
 ```bash
 pip install discord_help
 ```
-Or 
+Or use Git
 ```bash
 git clone https://github.com/Awakno/discord_help.git
 ```
